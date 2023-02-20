@@ -3,7 +3,7 @@
 exec 2>&1
 
 rm -rf dist/ peerjs/
-git clone https://github.com/peers/peerjs peerjs
+git clone https://github.com/war-machine97/react-native-peerjs peerjs
 cd peerjs
 git apply ../decoupling.diff
 ../node_modules/.bin/parcel build --no-source-maps lib/exports.ts -d ../dist --out-file peerjs.min.js
